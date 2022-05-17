@@ -16,6 +16,12 @@ return new class extends Migration
         Schema::create('cis_users', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('fname');
+            $table->string('lname');
+            $table->string('sex');
+            $table->string('username');
+            $table->string('password');
+
         });
     }
 
